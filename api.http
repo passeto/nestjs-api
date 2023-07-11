@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/brands
+###
+GET http://localhost:3000/brands/1
+###
+
+POST  http://localhost:3000/brands
+Content-Type: application/json
+
+{
+    "name": "Oakley"
+}
+###
+PATCH  http://localhost:3000/brands/1
+###
+
+DELETE http://localhost:3000/brands/10
+###
+
+POST  http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Camiseta Nike",
+    "price": 50,
+    "brandId": 1,
+}
